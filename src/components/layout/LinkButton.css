@@ -1,0 +1,10 @@
+.btn_link{
+    background-color: #222;
+    color: #fff;
+    transition: .5s;
+}
+
+.btn_link:hover{
+    color: #ffbb22;
+}
+
