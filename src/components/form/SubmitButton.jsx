@@ -1,10 +1,10 @@
 import './SubmitButton.css'
 
-const SubmitButton = ({ btnText }) => {
+const SubmitButton = ({ text }) => {
   return (
 
      <button type="submit" className="w-50 m-4 border-0 p-2 " style={{backgroundColor:'#222'}} >
-          {btnText}
+          { text }
      </button> 
 
   )
