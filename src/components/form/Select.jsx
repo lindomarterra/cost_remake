@@ -1,6 +1,6 @@
 
 
-const Select = ({ options, name, text }) => {
+const Select = ({ options, name, text, handleOnChange, value }) => {
   return (
     <div className="d-flex flex-column mt-3">
       <label htmlFor={name}> {text}: </label>
@@ -10,6 +10,8 @@ const Select = ({ options, name, text }) => {
         required
         name={name}
         id={name}
+        onChange={handleOnChange}
+        value={value || ''}
       >
         <option> Select some option </option>
 

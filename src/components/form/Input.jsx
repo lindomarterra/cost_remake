@@ -1,4 +1,4 @@
-const Input = ({ type, text, name, placeholder }) => {
+const Input = ({ type, text, name, placeholder, handleOnChange, value }) => {
   return (
     <div className="d-flex flex-column">
       <label htmlFor={name} className="py-2">
@@ -11,6 +11,8 @@ const Input = ({ type, text, name, placeholder }) => {
         type={type}
         name={name}
         placeholder={placeholder}
+        onChange={handleOnChange}
+        value={value}
       />
     </div>
   )
